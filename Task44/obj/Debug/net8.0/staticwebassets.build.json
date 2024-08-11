@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "Je4dLPjLTMqPnXfmbg9QFamaH671Gs/Uzw039wnVT2A=",
+  "Hash": "xj8pyok4tfk0rhIZc9SmanPE2E3n+35snXLEL/vOXT8=",
   "Source": "Task44",
   "BasePath": "_content/Task44",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Task44\\wwwroot",
+      "Source": "Task44",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\tasks2024\\JoVision-Backend-tasks\\Task44\\wwwroot\\",
+      "BasePath": "_content/Task44",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
