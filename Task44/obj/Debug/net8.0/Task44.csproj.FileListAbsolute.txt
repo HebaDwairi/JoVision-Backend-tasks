@@ -33,3 +33,4 @@ C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\r
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\Task44.pdb
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\Task44.genruntimeconfig.cache
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\ref\Task44.dll
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\Task44.sourcelink.json

@@ -4,7 +4,7 @@ using System;
 
 [ApiController]
 [Route("api/[controller]")]
-public class birthdateController : ControllerBase
+public class BirthdateController : ControllerBase
 {
     private int calculateAge(int y, int m, int d){
         var bdate = new DateTime(y, m, d);
