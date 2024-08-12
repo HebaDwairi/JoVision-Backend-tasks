@@ -35,3 +35,9 @@ C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\T
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\ref\Task44.dll
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\Task44.sourcelink.json
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\Task44.staticwebassets.runtime.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\0zsaf2cp.xck\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\3k5regmg.52t\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\hfc2rjgu.trr\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\lupine.jpeg\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\cabbageWhite\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\malva\metaData.json
