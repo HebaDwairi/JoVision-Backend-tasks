@@ -6,17 +6,6 @@ using System.IO;
 [Route("api/[controller]")]
 public class UpdateController : ControllerBase
 {
-    public class FileData
-    {
-        public IFormFile Img { get; set; } 
-        public string Owner { get; set; } = string.Empty;
-    }
-
-    public class MetaData{
-        public string Owner { get; set; } = string.Empty;
-        public DateTime CreationTime { get; set; } = DateTime.Now;
-        public DateTime LastModificationTime {get; set;} = DateTime.Now;
-    }
     [HttpPost]
     public async Task<IActionResult> Upload([FromForm] FileData fileData )
     {
@@ -29,7 +18,6 @@ public class UpdateController : ControllerBase
             return BadRequest("No Image owner specified");
         }
 
-        // create json obj and update modification time
         string imageName = Path.GetFileNameWithoutExtension(fileData.Img.FileName);
         var imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads", imageName);
         if(!Directory.Exists(imageFolderPath)){
@@ -63,4 +51,41 @@ public class UpdateController : ControllerBase
     }
 }
 
+[ApiController]
+[Route("api/[controller]")]
+public class RetrieveController : ControllerBase{
+    [HttpGet]
+    public IActionResult Get([FromQuery] string ownerName, [FromQuery] string imageName){
 
+        if (string.IsNullOrWhiteSpace(ownerName) || string.IsNullOrWhiteSpace(imageName)) {
+            return BadRequest("No Image owner or image name specified");
+        }
+
+        var imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads", imageName);
+        if(!Directory.Exists(imageFolderPath)){
+            return BadRequest("the image you want to retrieve doesn't exist");
+        }
+
+        string metaData = System.IO.File.ReadAllText(imageFolderPath + "/metaData.json");
+        MetaData metaDataObj = JsonSerializer.Deserialize<MetaData>(metaData);
+        if(ownerName != metaDataObj.Owner){
+            return BadRequest("the owner name you provided is incorrect");
+        }
+
+        var imagePath = Path.Combine(imageFolderPath, imageName + ".jpg");
+        var image = System.IO.File.OpenRead(imagePath);
+
+        return File(image, "image/jpg");
+    }
+}
+
+public class FileData{
+    public IFormFile Img { get; set; } 
+    public string Owner { get; set; } = string.Empty;
+}
+
+public class MetaData{
+    public string Owner { get; set; } = string.Empty;
+    public DateTime CreationTime { get; set; } = DateTime.Now;
+    public DateTime LastModificationTime {get; set;} = DateTime.Now;
+}

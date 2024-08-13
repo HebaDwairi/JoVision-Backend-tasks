@@ -37,3 +37,4 @@ C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\obj\Debug\net8.0\T
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\Task44.staticwebassets.runtime.json
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\malva\metaData.json
 C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\dragonfly\metaData.json
+C:\Users\user\Desktop\tasks2024\JoVision-Backend-tasks\Task44\bin\Debug\net8.0\uploads\snail\metaData.json
